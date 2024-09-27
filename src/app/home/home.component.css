@@ -1,0 +1,132 @@
+/* cuerpo y color */
+.landing-page {
+    width: 100%;
+    height: 100%;
+    background-color: #1f2e2b;
+  }
+  
+  /* primera imagen de los campeones uy titulo */
+  .header-section {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #E80000;
+  }
+  
+  .logo, .nintendo-logo {
+    height: 50px;
+    transition: transform 0.5s ease;
+  }
+  
+  .logo:hover, .nintendo-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .main-image-container {
+    position: relative;
+    height: auto;
+    
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+
+  
+  
+  .main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 68px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeInTitle 2s ease forwards;
+  }
+  
+  /* seccion principal del contenido, historia e imagenes */
+  .content-section {
+    padding: 40px;
+  }
+  
+  h2 {
+    font-size: 65px;
+    text-align: left;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease;
+    color: white;
+  }
+  
+  p {
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: justify;
+    width: 70%;
+    animation: fadeInUp 1.5s ease;
+    color: white;
+  }
+  
+  .image-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  .image-text-container.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .content-image {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-text-container.reverse .content-image {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  
+  .content-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* animaciones de www.animation.css.hoversains:3 */
+  @keyframes fadeInTitle {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
